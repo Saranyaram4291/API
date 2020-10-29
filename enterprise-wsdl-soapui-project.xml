@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com" xmlns:urn1="urn:sobject.enterprise.soap.sforce.com">
+   <soapenv:Header>
+           <urn:SessionHeader>
+         <urn:sessionId>${Properties#sessionId}</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:create>
+         <!--Zero or more repetitions:-->
+         <urn:sObjects xsi:type="urn1:Account" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<Name>Sample SOAP Acct</Name>
+		<Industry>Agriculture</Industry>
+		<Type>Prospect</Type>
+
+            <!--Zero or more repetitions:-->
+              </urn:sObjects>
+      </urn:create>
+   </soapenv:Body>
+</soapenv:Envelope>
